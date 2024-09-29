@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/accueil.css">
+    <title>Pixel Lounge</title>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <!-- Logo à gauche -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo du site">
+        </div>
+
+        <!-- Liens de navigation au centre -->
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Réservation</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Évènements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Bouton d'authentification à droite -->
+        <div class="auth-button">
+            <button>S'identifier</button>
+        </div>
+    </nav>
+    <!-- Fin - Barre de navigation -->
+
+    <!-- Carrousel d'images -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="assets/images/imagesLongues/pcGamingManetteConsole.jpg" alt="Image 1">
+            <img src="assets/images/imagesLongues/pcGamingEtConsoles.png" alt="Image 2">
+            <img src="assets/images/background/degradeVert.jpg" alt="Image 3">
+        </div>
+
+        <!-- Flèches de navigation -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Fin - Carrousel d'images -->
+
+    <!-- Services proposés -->
+    <div class="services-section">
+        <h2 class="services-title">Nos services</h2>
+        <div class="services-container">
+            <a href="link1.html" class="service-box">
+                <img src="assets/images/imagesCarres/pcGaming.jpg" alt="Service 1">
+                <h4>Internet haut débit</h4>
+                <p>Plongez dans le jeu avec notre Internet haut débit, pour un gaming ultra rapide et sans lag.</p>
+            </a>
+            <a href="link2.html" class="service-box">
+                <img src="assets/images/imagesCarres/gamingCyberCafe.png" alt="Service 2">
+                <h4>PC Gaming</h4>
+                <p>Découvrez nos PC Gaming haut de gamme, conçus pour des performances époustouflantes et une immersion totale dans vos jeux préférés.</p>
+            </a>
+            <a href="link3.html" class="service-box">
+                <img src="assets/images/imagesCarres/assietteRepas.png" alt="Service 3">
+                <h4>Bar et snack</h4>
+                <p>Détendez-vous avec des boissons rafraîchissantes et des snacks savoureux, parfaits pour recharger vos batteries entre deux sessions de jeu.</p>
+            </a>
+            <a href="link4.html" class="service-box">
+                <img src="assets/images/background/degradeVert.jpg" alt="Service 4" alt="Service 4">
+                <h4>Titre service 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque ut aperiam modi sed! Fugit excepturi beatae earum quaerat. Repellendus iure atque nostrum distinctio id. Nulla, aspernatur adipisci. Nostrum, sit.</p>
+            </a>
+            <a href="link5.html" class="service-box">
+                <img src="assets/images/background/degradeVert.jpg" alt="Service 5" alt="Service 5">
+                <h4>Titre service 5</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque ut aperiam modi sed! Fugit excepturi beatae earum quaerat. Repellendus iure atque nostrum distinctio id. Nulla, aspernatur adipisci. Nostrum, sit.</p>
+            </a>
+        </div>
+
+        <!-- Bouton en savoir plus -->
+        <button class="learn-more">En savoir plus</button> 
+
+        <!-- Présentation approfondie -->
+        <div class="services-container">
+            <a href="link3.html" class="service-box small">
+                <img src="assets/images/imagesMoyenne/consoleGaming.png" alt="Service 3">
+                <h4>L'espace console</h4>
+                <p>Description du service 3.</p>
+            </a>
+            <a href="link7.html" class="service-box small">
+                <img src="assets/images/background/degradeVert.jpg" alt="Service 7">
+                <h4>Titre 7</h4>
+                <p>Description du service 7.</p>
+            </a>
+            <a href="link4.html" class="service-box large">
+                <img src="assets/images/imagesMoyenne/pcGamingCyberCafe.jpg" alt="Service 4">
+                <h4>Nos zone gaming</h4>
+                <p>Description du service 4.</p>
+            </a>
+        </div>
+        <div class="services-container">
+            <a href="link7.html" class="service-box large">
+                <img src="assets/images/background/degradeVert.jpg" alt="Service 7">
+                <h4>La salle détente</h4>
+                <p>Description du service 7.</p>
+            </a>
+            <a href="link10.html" class="service-box large">
+                <img src="assets/images/background/degradeVert.jpg" alt="Service 10">
+                <h4>Titre 10</h4>
+                <p>Description du service 10.</p>
+            </a>
+            <a href="link8.html" class="service-box small">
+                <img src="assets/images/imagesCarres/repas.png" alt="Service 8">
+                <h4>Le bas/snack</h4>
+                <p>Description du service 8.</p>
+            </a>
+        </div>
+        <!-- Fin - Présentation approfondie -->
+
+    </div>
+    <!-- Fin - Services proposés -->
+
+    <!-- Pied de page / footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="about.html">À propos</a>
+            <a href="support.html">Support</a>
+            <a href="terms.html">Termes et conditions</a>
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <img src="assets/images/icones/iconeInstagram.svg" alt="Instagramm">
+            </a>
+            <a href="#" target="_blank">
+                <img src="assets/images/icones/iconeTwitter.svg" alt="Twitter">
+            </a>
+            <a href="#" target="_blank">
+                <img src="assets/images/icones/iconeGitHub.svg" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <!-- Fin - Pied de page / footer -->
+
+    
+</body>
+</html>

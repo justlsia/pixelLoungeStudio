@@ -1,0 +1,275 @@
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(/assets/polices/Raleway/static/Raleway-Light.ttf)
+}
+
+@font-face {
+	font-family: 'Raleway-bold';
+	src: url(/assets/polices/Raleway/static/Raleway-Bold.ttf)
+}
+
+
+/* Style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    background-color: #101010;
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A9A9A9;
+    padding: 10px 20px;
+    color: #A9A9A9;
+    background-color: #A9A9A9;
+}
+
+/* Logo à gauche */
+.logo img {
+    width: 50px; /* Ajuste la taille selon ton logo */
+    height: auto;
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+/* Liens de navigation au centre */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Raleway-bold';
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+/*.nav-links a:hover {
+    color: #ffa723;
+    font-weight: bold;
+}*/
+
+/* Bouton d'identication à droite */
+.auth-button button {
+    background-color: #202020;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-button button:hover {
+    background-color: #202020;
+}
+
+
+
+
+
+/* Carrousel d'images */
+.carousel-container {
+    position: relative;
+    width: calc(100% - 20px); /* Réduction de la largeur pour inclure une marge de 10px de chaque côté */
+    max-height: 350px; /* Hauteur maximale à ajustée */
+    overflow: hidden;
+    margin: 30px 5px; /* Ajout de 10px de marge autour du conteneur */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(300% + 30px); /* Largeur ajustée pour inclure la marge à droite des images */
+}
+
+.carousel img {
+    width: calc(100% - 20px); /* Largeur des images ajustée avec la marge */
+    height: 350px; /* Réglage de la hauteur des images à 400px */
+    object-fit: cover; /* Garde les proportions des images tout en remplissant l'espace */
+    margin: 0 10px; /* 10px de marge autour de chaque image */
+    /*flex-shrink: 0; /* Empêche les images de se réduire */
+}
+
+/* Boutons fléchés */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 0px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* Section des services */
+.services-section h2 {
+    text-align: left;
+    margin: 0 0 30px 10px;
+    font-family: 'Raleway-bold';
+    color: white;
+}
+
+.services-section {
+    margin: 20px 20px; /* Marges autour de la section */
+    text-align: center; /* Centrer le texte */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;; /* Centrer les boîtes horizontalement */
+    gap: 50px; /* Espace entre chaque boîte */
+    margin-bottom: 30px;
+}
+
+.services-container p, h4 {
+    background-color: #A9A9A9;
+}
+
+.service-box {
+    background-color: #A9A9A9; /* Couleur de fond des boîtes */
+    border: 1px solid #A9A9A9; /* Bordure légère autour des boîtes */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    /*width: 28%; /* Largeur des boîtes (ajustement si nécessaire) */
+    width: 400px; /* Largeur des boîtes (ajustement si nécessaire) */
+    text-align: left; /* Aligner le texte à gauche */
+    text-decoration: none; /* Enlever la décoration des liens */
+    color: inherit; /* Garder la couleur du texte par défaut */
+    transition: transform 0.2s; /* Ajout d'une transition pour l'effet de survol */
+    flex-wrap: wrap; /* Retour à la ligne selon la taille de l'écran */
+}
+
+.service-box:hover {
+    transform: scale(1.01); /* Légère augmentation de la taille au survol */
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.507), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.service-box img {
+    width: 100%; /* L'image prend toute la largeur de la boîte */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    border-radius: 10px;
+}
+
+.service-box h4 {
+    margin: 10px 0 5px; /* Espacement pour le titre */
+}
+
+.service-box p {
+    margin: 0; /* Aucune marge pour le texte */
+}
+
+
+
+
+/* Bouton : En savoir plus */
+.learn-more {
+    background-color: #A9A9A9; /* Couleur de fond du bouton */
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 25px; /* Bord arrondi */
+    cursor: pointer; /* Curseur en forme de main */
+    font-size: 16px; /* Taille de la police */
+    margin: 30px 0 30px 0;
+    font-family: 'Raleway-bold';
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.learn-more:hover {
+    background-color: #A9A9A9; /* Couleur du bouton au survol */
+    font-family: 'Raleway-bold';
+}
+
+
+
+/* Presentation approfondie */
+.service-box.small {
+    width: 35%; /* Largeur pour la boîte de gauche */
+}
+
+.service-box.large {
+    width: 55%; /* Largeur pour la boîte de droite */
+}
+
+.new-services-container {
+    display: flex;
+    justify-content: space-around; /* Centrer les nouvelles boîtes horizontalement */
+    gap: 20px; /* Espace entre chaque boîte */
+    margin: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+
+
+
+/* Pied de page / Footer */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Espace entre les liens et les icônes */
+    align-items: center; /* Aligner verticalement */
+    padding: 12px;
+    background-color: #A9A9A9; /* Couleur de fond */
+    margin-top: 60px;;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center; /* Centrer les liens horizontalement */
+    flex: 1; /* Permet aux liens de prendre l'espace disponible */
+    gap: 20px; /* Espace entre les liens */
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+.footer a {
+    text-decoration: none; /* Enlever la décoration des liens */
+    color: #000000; /* Couleur du texte des liens */
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espace entre les icônes */
+    margin-left: auto; /* Pousse les icônes à droite */
+    background-color: #A9A9A9; /* Couleur de fond */
+}
+
+.social-icons img {
+    width: 28px; /* Largeur des icônes */
+    height: 28px; /* Hauteur des icônes */
+    background-color: #A9A9A9; /* Couleur de fond */
+}
